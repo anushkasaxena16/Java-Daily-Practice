@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String args[]){
+        HashMap<Integer , String> hash_map1=new HashMap<Integer,String>();
+        HashMap<Integer , String> hash_map2=new HashMap<Integer,String>();
+        
+        hash_map1.put(1,"Red");
+        hash_map1.put(2,"White");
+        hash_map1.put(3,"Yellow");
+        
+        System.out.println("\n Values in hash_map1" +hash_map1);
+        
+        hash_map2.put(4,"Black");
+        hash_map2.put(5,"Blue");
+        hash_map2.put(6,"Orange");
+        
+         System.out.println("\n Values in hash_map2" +hash_map2);
+         
+         hash_map2.putAll(hash_map1);
+         
+         System.out.println("\n Now values in second hashmap :" +hash_map2);
+        
+        }
+    }
